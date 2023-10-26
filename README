@@ -1,0 +1,5 @@
+Prevent Akamai Login Delay
+
+Login pages that use Akamai bot protection can give you a delay page if you use a password manager or even just paste your password.  Here is the delay text:  "Processing your request. If this page doesn't refresh automatically, resubmit your request."
+
+But there is a simple way to avoid this, just put this code in a bookmarklet or userscript.  It will disable the input events that check input timing.  It is based on the "don't mess with paste" bookmarklet.  I just modified the events for the pages where I am affected.  The page you are having trouble with might have different events that need to be added.
